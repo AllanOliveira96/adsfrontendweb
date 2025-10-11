@@ -8,7 +8,7 @@
 <body>
     <header>
         <h1>Terra Renovada - A natureza renovada pelas nossas mãos.</h1>
-        <h2>Seja um Vountário</h2>
+        <h2>Seja um Voluntário</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -26,7 +26,7 @@
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" name="nome" required>
                     <label for="email">E-mail:</label>
-                    <input type="text" id="email" name="e-mail" required>
+                    <input type="email" id="email" name="e-mail" required>
                     <label for="CPF">CPF:</label>
                     <!-- CPF -->
                     <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
@@ -34,21 +34,20 @@
                     <br>
                     <label for="Data de nascimento">Data de nascimento:</label>
                     <input type="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}"
-                            placeholder="00/00/0000" title="00-00-0000">
+                            placeholder="00/00/0000" title="00-00-0000" required>
                     <label for="endereço">Endereço:</label>
                     <input type="text" id="endereço" name="endereço" required>       
                     <label for="telefone">Telefone:</label>
                     <!--Telefone-->
-                    <input type="tel" pattern="\([0-9]{2}\)[0-9]{5}-[09]{4}"
+                    <input type="tel" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"
                             placeholder="(00)00000-0000" tilte="Formato: (00)00000-0000">              
                     <br>
                     <label for="cidade/estado">Cidade/Estado:</label>
                     <input type="text" id="cidade/estado" name="cidade/estado" required>
                     <!--CEP-->                    
                     <label for="CEP">CEP:</label>
-                    <input type="text" pattern="[0-9][5]-[0-9]{3}"
-                            placeholder="00000-000" title="CEP:00000-000">        
-                    </label>  
+                    <input type="text" pattern="[0-9]{5}-[0-9]{3}"
+                            placeholder="00000-000" title="CEP:00000-000">       
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
